@@ -9,15 +9,24 @@
 <body>
 	<script type="text/jsx">
 		var Avatar = React.createClass({
+
+			getDefaultProps: function() {
+				return {
+					path: 'http://nick.mtvnimages.com/nick/properties/avatar/show-thumb-avatar-web.jpg?quality=0.75&maxdimension=600'
+				}
+			},
 			
 			render: function() {
 				return (
-					<img src={ this.props.path } />
+					<a href={ this.props.path }>
+						<img src={ this.props.path } />
+					</a>
+					
 				);
 			}
 		});
 
-		React.render(<Avatar path='http://images.celebeat.com/data/images/full/6508/avatar-movie.jpg' />, document.body);
+		React.render(<Avatar />, document.body);
 	</script>
 </body>
 </html>
