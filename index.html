@@ -7,26 +7,6 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/JSXTransformer.js"></script>
 </head>
 <body>
-	<script type="text/jsx">
-		var Avatar = React.createClass({
-
-			getDefaultProps: function() {
-				return {
-					path: 'http://nick.mtvnimages.com/nick/properties/avatar/show-thumb-avatar-web.jpg?quality=0.75&maxdimension=600'
-				}
-			},
-			
-			render: function() {
-				return (
-					<a href={ this.props.path }>
-						<img src={ this.props.path } />
-					</a>
-					
-				);
-			}
-		});
-
-		React.render(<Avatar />, document.body);
-	</script>
+	<script type="text/jsx" src="/js/avatar.js"></script>
 </body>
 </html>
