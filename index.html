@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Avatar</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/JSXTransformer.js"></script>
+</head>
+<body>
+	<script type="text/jsx">
+		var Avatar = React.createClass({
+			
+			render: function() {
+				return (
+					<img src={ this.props.path } />
+				);
+			}
+		});
+
+		React.render(<Avatar path='http://images.celebeat.com/data/images/full/6508/avatar-movie.jpg' />, document.body);
+	</script>
+</body>
+</html>
